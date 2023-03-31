@@ -1,0 +1,19 @@
+{
+    "name": "url_checker",
+    "version": "1.0.0",
+    "description": "Read all tab url",
+    "manifest_version": 3,
+    "author": "Shubham Sharma",
+    "action":{
+        "default_title": "Url Chcek"
+    },
+    "permissions": [
+    "tabs"
+  ],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["index.js"]
+        }
+    ]
+}
