@@ -7,6 +7,7 @@ module.exports = {
         filename: 'bundle.js'
     },
     mode: 'development',
+    target: 'node',
     module: {
         rules: [
           { test: /.ts$/, use: 'ts-loader' },
@@ -32,6 +33,8 @@ module.exports = {
         https: require.resolve('https-browserify'),
         os: require.resolve('os-browserify/browser'),
         stream: require.resolve('stream-browserify'),
+        path: require.resolve('path-browserify'),
+        zlib: require.resolve('browserify-zlib'),
       },
     }, 
 };
